@@ -1,0 +1,33 @@
+<HTML>
+	<HEAD>
+		
+		<title>Canvas testing env</title>
+		
+		<!-- JQUERY -->
+		<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+		
+		<!-- ESSENTIALS -->
+		<script src="essentials.js"></script>
+		
+		<!-- LOAD CHOSEN JS FILE -->
+		<script type="text/javascript">
+			if( location.search.length > 0 ){
+				var script = document.createElement("script")
+				script.src = location.search.substr(1) + ".js"
+				document.head.appendChild(script)
+			}
+		</script>
+    
+		<style>
+			body{
+				margin: 0px;
+			}
+		</style>
+		
+	</HEAD>
+	<BODY>
+		
+		<canvas id="canvas"></canvas>
+		
+	</BODY>
+</HTML>
